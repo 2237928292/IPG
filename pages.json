@@ -1,0 +1,130 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// "enablePullDownRefresh": false,   // 下拉刷刷新
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "主页",
+				"enablePullDownRefresh": false,   // 下拉刷刷新
+				"onReachBottomDistance": 500
+				
+			}
+
+		}, {
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "我",
+				"enablePullDownRefresh": false
+			}
+		}
+		, {
+			"path": "pages/ing/ing",
+			"style": {
+				"navigationBarTitleText": "打卡详情",
+				"enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleView":false
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false,
+					"popGesture": "none",
+					"softinputNavBar": "none"
+				}
+            }
+            
+        }
+     
+        ,{
+            "path" : "pages/home/orderDetails/orderDetails",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "工单详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/home/orderDetails/KongbiaDingDan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "工单详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/ing/MergeOrder/MergeOrder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "合并工单",
+                "enablePullDownRefresh": false,
+				"onReachBottomDistance": 500
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/orderDetails/OKorder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "工单详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Msg/Msg",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		
+	},
+	"tabBar": { //底部导航栏
+		"color": "#333333", //文字颜色
+		"selectedColor": "#33a5e0", // 激活后文字颜色
+
+		"backgroundColor": "#FFFFFF", //   tabbar 的背景颜色
+		"list": [{
+				"pagePath": "pages/home/home", //页面路径
+				"iconPath": "static/icon/tabbar/icon_0/shouye.png",
+				"selectedIconPath": "static/icon/tabbar/icon_1/shouye.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/Msg/Msg", //页面路径
+				"iconPath": "static/icon/tabbar/icon_0/xiaoxizhongxin.png",
+				"selectedIconPath": "static/icon/tabbar/icon_1/xiaoxizhongxin.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/me/me", //页面路径
+				"iconPath": "static/icon/tabbar/icon_0/wode.png",
+				"selectedIconPath": "static/icon/tabbar/icon_1/wode.png",
+				"text": "我"
+			}
+		]
+	}
+}
